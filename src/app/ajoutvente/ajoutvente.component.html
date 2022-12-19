@@ -2,12 +2,13 @@
 <hr/>
 
 
-<div class="container information"><p>{{this.messageService.getMessage()}}</p></div>
-<div class="form">
+<div class="container d-flex justify-content-center information"><p>{{this.messageService.getMessage()}}</p></div>
+<div class="container form d-flex justify-content-center">
   <form class="scrollbar-primary">
 
     <div class="form-input">
       <div class="form-input">
+        <label>Produit</label>
         <select [ngModel]="this.idProduit" (ngModelChange)="onChangeProduit($event)" name="sel2">
           <option  *ngFor="let produit of listproduit" [value]="produit.idProduit" >{{produit.nom}}</option>
         </select>
@@ -16,6 +17,7 @@
     </div>
 
     <div class="form-input">
+      <label>utilisateur</label>
       <select [ngModel]="this.idUser" (ngModelChange)="onChange($event)" name="sel2">
         <option [value]="user.idUser" *ngFor="let user of listuser">{{user.email}}</option>
       </select>
@@ -24,6 +26,7 @@
     <div class="form-input">
 
       <div class="form-input">
+        <label>Client</label>
         <select [ngModel]="this.idClient" (ngModelChange)="onChangeClient($event)" name="sel3">
           <option *ngFor="let personne of listClient" [value]="personne.idClient">{{personne.idPersonneClient}}</option>
         </select>

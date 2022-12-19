@@ -9,10 +9,10 @@
 </div>
 
 
-<div class="container form">
+<div class="container d-flex justify-content-center form">
   <form class="scrollbar-primary">
     <div class="col-sm-4">
-      <img width="250px" height="250px" [src]="PhotoFileName"/>
+      <img max-width="250px" height="250px" [src]="PhotoFileName"/>
       <input class="m-2" type="file" (change)="imageUpload($event)">
     </div>
     <div class="form-input">
@@ -22,7 +22,7 @@
     </div>
 
     <div class="form-input">
-      <label for="Prenom">Prenom de la Perosnne</label>
+      <label for="Prenom">Prenom de la Personne</label>
       <input type="text" name="Prenom" id="Prenom" value="" [(ngModel)]="this.prenom" placeholder="Prenom" required/>
 
 

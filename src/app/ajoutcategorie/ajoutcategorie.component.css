@@ -8,6 +8,9 @@ body{
   color: #2E2E2E;
   background-color: #161a1a;
 }
+label{
+  font-size: 2em;
+}
 h1, h2, h3, h4, h5, h6{
   font-family: 'Sanchez', serif;
   text-align: center;
@@ -28,7 +31,6 @@ i.fa{
 }
 form{
   line-height: 2em;
-  width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -98,18 +100,12 @@ select#distribution{
 }
 
 button{
-  width: 35%;
-  height: 65px;
   border: none;
   background-color: #3a9c90;
   font-size: 1em;
-  color: white;
-  font-family: 'Sanchez', serif;
-  text-transform: uppercase;
-  float: right;
-  box-shadow: 2px 2px 2px 0 #C9C9C9;
-  transition: all 0.3s ease-in-out;
-  margin: 5% 0;
+}
+#creer{
+  margin-left: 1em;
 }
 button:hover{
   background-color: white;
@@ -117,8 +113,4 @@ button:hover{
   border-bottom: 6px solid #3a9c90;
   color: #3a9c90;
 }
-.container{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
+

@@ -1,6 +1,8 @@
 *{
   box-sizing: border-box;
-
+}
+label{
+font-size: 2em;
 }
 .information{
   color: red;
@@ -47,7 +49,7 @@ form div.form-input{
 }
 form div > label{
   display: block;
-  color: #161a1a;
+  color: #d6e4e4;
 }
 form div > label[for="capcha"]{
   display: inline-block;
@@ -107,18 +109,12 @@ select#distribution{
 }
 
 button{
-  width: 35%;
-  height: 65px;
   border: none;
   background-color: #3a9c90;
   font-size: 1em;
-  color: white;
-  font-family: 'Sanchez', serif;
-  text-transform: uppercase;
-  float: right;
-  box-shadow: 2px 2px 2px 0 #C9C9C9;
-  transition: all 0.3s ease-in-out;
-  margin: 5% 0;
+}
+#creer{
+  margin-left: 1em;
 }
 button:hover{
   background-color: white;

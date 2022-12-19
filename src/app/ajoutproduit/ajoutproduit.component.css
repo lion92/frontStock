@@ -2,9 +2,12 @@
   box-sizing: border-box;
 
 }
+label{
+  font-size: 2em;
+}
 body{
   font-family: 'Rajdhani', sans-serif;
-  width: 80%;
+
   margin : 2% auto;
   color: #2E2E2E;
   background-color: #161a1a;
@@ -29,7 +32,6 @@ i.fa{
 }
 form{
   line-height: 2em;
-  width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -94,18 +96,12 @@ select#distribution{
 }
 
 button{
-  width: 35%;
-  height: 65px;
   border: none;
   background-color: #3a9c90;
   font-size: 1em;
-  color: white;
-  font-family: 'Sanchez', serif;
-  text-transform: uppercase;
-  float: right;
-  box-shadow: 2px 2px 2px 0 #C9C9C9;
-  transition: all 0.3s ease-in-out;
-  margin: 5% 0;
+}
+#creer{
+  margin-left: 1em;
 }
 button:hover{
   background-color: white;
